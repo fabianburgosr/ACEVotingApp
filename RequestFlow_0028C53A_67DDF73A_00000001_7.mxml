@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+    <version xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</version>
+    <checkpoint>
+        <messageId xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">0028C53A-67DDF73A-00000001</messageId>
+        <propagationCount xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">7</propagationCount>
+        <nodeCallDepth xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">8</nodeCallDepth>
+        <timestamp xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="TIMESTAMP">2025-03-21 23:33:14.751704</timestamp>
+        <source>
+            <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Compute</name>
+            <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">RequestFlow#FCMComposite_1_4</identifier>
+            <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmComputeNode</type>
+            <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">out</terminal>
+            <nodePath>
+                <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">CoordinatedRequestReplyTutorial</application>
+                <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">RequestFlow</messageFlow>
+                <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Compute</node>
+            </nodePath>
+            <inputNode xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="BOOLEAN">FALSE</inputNode>
+        </source>
+        <target>
+            <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">MQ Output</name>
+            <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">RequestFlow#FCMComposite_1_5</identifier>
+            <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmMQOutputNode</type>
+            <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">in</terminal>
+            <nodePath>
+                <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">CoordinatedRequestReplyTutorial</application>
+                <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">RequestFlow</messageFlow>
+                <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">MQ Output</node>
+            </nodePath>
+        </target>
+    </checkpoint>
+    <environment/>
+    <localEnvironment xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+        <Destination>
+            <HTTP>
+                <RequestIdentifier iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</RequestIdentifier>
+            </HTTP>
+        </Destination>
+        <WrittenDestination>
+            <MQ>
+                <DestinationData>
+                    <queueManagerName iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+                    <queueName iib:valueType="CHARACTER">STORE.QUEUE</queueName>
+                    <msgId iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</msgId>
+                    <replyIdentifier iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</replyIdentifier>
+                    <correlId iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</correlId>
+                    <GroupId iib:valueType="BLOB">000000000000000000000000000000000000000000000000</GroupId>
+                    <putDate iib:valueType="CHARACTER">20250321</putDate>
+                    <putTime iib:valueType="CHARACTER">23331476</putTime>
+                    <bindingType iib:valueType="CHARACTER">CLIENT</bindingType>
+                    <destinationQueueManager iib:valueType="CHARACTER">QMBPSLAB</destinationQueueManager>
+                    <queueManagerHostname iib:valueType="CHARACTER">localhost</queueManagerHostname>
+                    <listenerPortNumber iib:valueType="INTEGER">1414</listenerPortNumber>
+                    <channelName iib:valueType="CHARACTER">CHANNEL1</channelName>
+                </DestinationData>
+            </MQ>
+        </WrittenDestination>
+    </localEnvironment>
+    <exceptionList/>
+    <message xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+        <Properties iib:parser="MQPROPERTYPARSER">
+            <MessageSet iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <MessageType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <MessageFormat iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <Encoding iib:valueType="INTEGER">546</Encoding>
+            <CodedCharSetId iib:valueType="INTEGER">0</CodedCharSetId>
+            <Transactional iib:valueType="BOOLEAN">FALSE</Transactional>
+            <Persistence iib:valueType="BOOLEAN">FALSE</Persistence>
+            <CreationTime iib:valueType="GMTTIMESTAMP">2025-03-21 23:33:14.751704</CreationTime>
+            <ExpirationTime iib:valueType="INTEGER">-1</ExpirationTime>
+            <Priority iib:valueType="INTEGER">-1</Priority>
+            <ReplyIdentifier iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</ReplyIdentifier>
+            <ReplyProtocol iib:valueType="CHARACTER">SOAP-HTTP</ReplyProtocol>
+            <Topic iib:elementType="0x03000000"/>
+            <ContentType iib:valueType="CHARACTER">application/json; charset=utf-8</ContentType>
+            <IdentitySourceType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentitySourceToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentitySourcePassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentitySourceIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentityMappedType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentityMappedToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentityMappedPassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <IdentityMappedIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+        </Properties>
+        <MQMD iib:parser="MQHMD">
+            <SourceQueue iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <Transactional iib:valueType="BOOLEAN">FALSE</Transactional>
+            <Encoding iib:valueType="INTEGER">546</Encoding>
+            <CodedCharSetId iib:valueType="INTEGER">0</CodedCharSetId>
+            <Format iib:valueType="CHARACTER"/>
+            <Version iib:valueType="INTEGER">1</Version>
+            <Report iib:valueType="INTEGER">0</Report>
+            <MsgType iib:valueType="INTEGER">8</MsgType>
+            <Expiry iib:valueType="INTEGER">-1</Expiry>
+            <Feedback iib:valueType="INTEGER">0</Feedback>
+            <Priority iib:valueType="INTEGER">-1</Priority>
+            <Persistence iib:valueType="INTEGER">0</Persistence>
+            <MsgId iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</MsgId>
+            <CorrelId iib:valueType="BLOB">4556485400000000360000007fbd0dbb1178260000000000</CorrelId>
+            <BackoutCount iib:valueType="INTEGER">0</BackoutCount>
+            <ReplyToQ iib:valueType="CHARACTER">BACKEND.REPLY</ReplyToQ>
+            <ReplyToQMgr iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <UserIdentifier iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <AccountingToken iib:valueType="BLOB">0000000000000000000000000000000000000000000000000000000000000000</AccountingToken>
+            <ApplIdentityData iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <PutApplType iib:valueType="INTEGER">0</PutApplType>
+            <PutApplName iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <PutDate iib:valueType="DATE">2025-03-21</PutDate>
+            <PutTime iib:valueType="GMTTIME">23:33:14.751704</PutTime>
+            <ApplOriginData iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+            <GroupId iib:valueType="BLOB">000000000000000000000000000000000000000000000000</GroupId>
+            <MsgSeqNumber iib:valueType="INTEGER">1</MsgSeqNumber>
+            <Offset iib:valueType="INTEGER">0</Offset>
+            <MsgFlags iib:valueType="INTEGER">0</MsgFlags>
+            <OriginalLength iib:valueType="INTEGER">-1</OriginalLength>
+        </MQMD>
+        <XMLNSC iib:parser="xmlnsc">
+            <Message>
+                <VotingIntention iib:valueType="CHARACTER">A</VotingIntention>
+            </Message>
+        </XMLNSC>
+    </message>
+</MessageAssembly>
